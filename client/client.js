@@ -4,7 +4,7 @@ const fs = require('fs');
 
 async function main() {
     try {
-        const ccpPath = path.resolve(__dirname, '../network/connection-org1.json');
+        const ccpPath = path.resolve(__dirname, '../network/connection-RBI.json');
         const ccp = JSON.parse(fs.readFileSync(ccpPath, 'utf8'));
 
         const walletPath = path.join(process.cwd(), 'wallet');
